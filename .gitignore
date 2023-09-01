@@ -1,0 +1,11 @@
+# ビルド生成物
+cmake-build-debug/
+cmake-build-release/
+
+# CLionのユーザー設定
+.idea/
+
+# 一時ファイル
+*.swp
+*~
+*.bak
