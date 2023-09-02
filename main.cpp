@@ -2,15 +2,14 @@
 using namespace std;
 
 int main() {
-    int a, b, k;
-    cin >> a >> b >> k;
-    for (int i = a; i <= min(b, a + k - 1); ++i) {
-        // 0からのループではなく、始点をaにする
-        // bと、kの和がどちらか近い方までループ
-        std::cout << i << std::endl;
+    int n;
+    cin >> n;
+    int ans = 1;
+    while(ans * 2 <= n)
+    {
+        ans = ans * 2;
+        // ans <<= 1;: ans を2倍にするために、ビットを1つ左にシフトする。これは ans = ans * 2; と同等。
     }
-    for (int i = max(b - k + 1, a + k); i <= b; ++i) {
-        std::cout << i << std::endl;
-    }
+    cout << ans << endl;
     return 0;
 }
